@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HARDWARE </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <title>Dark Mode</title>
+        
+        <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+        
+        <style>
+            body{
+            text-align:center;
+            }
+            img{
+                height:40px;
+                    width:40px;
+            }
+            h1{
+            color: #fdfdfd;
+            }
+           
+
+            .mode {
+               float:inline-end;
+            }
+            .change {
+                cursor:grab;
+                border: 1px solid rgb(101, 101, 109);
+                border-radius: 40%;
+                width: 20px;
+                text-align: center;
+                padding: 2px;
+                margin-left: 5px;
+            }
+            .dark{
+				background-image: linear-gradient(135deg, #000000 10%, #000000 100%);
+                color: #cc1919;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="mode">
+            Dark mode:			
+            <span class="change">OFF</span>
+        </div>
+        
+    
+        <script>
+            $( ".change" ).on("click", function() {
+                if( $( "body" ).hasClass( "dark" )) {
+                    $( "body" ).removeClass( "dark" );
+                    $( ".change" ).text( "OFF" );
+                } else {
+                    $( "body" ).addClass( "dark" );
+                    $( ".change" ).text( "ON" );
+                }
+            });
+        </script>
+    </body>
+    
+    
+    </html>
+
+	<style>
+		body {
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+			background-image: linear-gradient(135deg, #050b04 10%, #c5c5c7 100%);
+		}
+		header {
+		
+			background-image: linear-gradient(135deg, #32229f 10%, #c364b0 100%);
+			padding: 10px;
+			text-align: center;
+		}
+		nav {
+            font-family: 'Times New Roman', Times, serif;
+			background-image: linear-gradient(135deg, #000000 10%, #201111 100%);
+			color:rgb(187, 22, 22);
+			padding: 10px;
+			text-align: center;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav a {
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+			padding: 10px;
+		}
+		nav a:hover {
+			background-color: rgb(230, 221, 221);
+		}
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: flex-start;
+			margin: 50px;
+		}
+		.job,.job1,.job2 {
+        
+            background-image: linear-gradient(135deg, #737e95 10%, #ac9200 100%);
+
+			box-shadow: 0px 0px 15px #ccc;
+            border-radius: 10px;
+			margin: 20px;
+			width: 300px;
+			height: 450px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px;
+            
+		}
+
+        .job:hover {
+			transform: translateY(-5px);
+			box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);
+		}
+        .job1:hover:hover {
+			transform: translateY(-5px);
+			box-shadow: 8px 16px 0 rgba(0,0,0,0.2);
+		}
+        .job2:hover:hover {
+			transform: translateY(-5px);
+			box-shadow: 8px 16px 0 rgba(0,0,0,0.2);
+		}
+		.job h2 {
+			margin-top: 0px;
+		}
+        img{
+        width: 500px;
+        height: 500px;
+        object-fit :fill
+      }
+		.job p {
+			margin: 10px 0px;
+		}
+		.job button {
+			background-color: #a2c15e;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			width: 100%;
+			cursor: pointer;
+		}
+        .job1 button {
+			background-color: #a2c15e;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			width: 100%;
+			cursor: pointer;
+		}
+        .job2 button {
+			background-color: #af4c66;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			width: 100%;
+			cursor: pointer;
+		}
+        .job2 img{
+            height: 220px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        .job img{
+            height: 220px;
+            width: 300px;
+        }
+        .job1 img{
+            height: 220px;
+            width: 300px;
+        }
+		.job button:hover {
+			background-color: #3e8e41;
+		}
+        .job1 button:hover {
+			background-color: #3e8e41;
+		}
+        .job2 button:hover {
+			background-color: #3e8e41;
+		}
+		footer {
+			background-color: rgb(21, 14, 14);
+			color: white;
+			padding: 10px;
+			text-align: center;
+        }
+	</style>
+</head>
+<body>
+    <div class="po">
+	<header>
+		<h1>HARDWARE Courses</h1>
+	</header>
+    <img src="https://images.pexels.com/photos/9028881/pexels-photo-9028881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+<img src="https://images.pexels.com/photos/8294650/pexels-photo-8294650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""><main>
+    <div class="job">
+        <h2>ROBOTICS</h2>
+<img src="https://cdn.ourcrowd.com/wp-content/uploads/2022/02/Robotics-1.jpg" alt=""><button><a href="https://in.coursera.org/courses?query=robotics"> APPLY NOW </a> </button>
+      
+    </div>
+
+    <div class="job">
+        <h2>VLSI</h2>
+<img src="https://www.einfochips.com/blog/wp-content/uploads/2018/11/power-dissipation-in-vlsi-moving-to-low-power-soc-design-while-improving-performance-featured.jpg" alt=""><button><a href="https://chipedge.com/online-job-oriented-vlsi-courses-sfp/?gclid=CjwKCAjwoIqhBhAGEiwArXT7K8W1lM_icUUTccgzTj59EsUzHoi0SLpBvLjipzlGClAtbCRd6-vG1xoC1KUQAvD_BwE/"> APPLY NOW </a> </button>
+      
+    </div>
+    
+    <div class="job">
+        <h2>EMBEDED SYSTEMS</h2>
+<img src="https://static1.shine.com/l/m/images/blog/Embedded_System_Intro_Types_Applications_Architecture_and_Examples.jpg" alt="">  <button><a href="https://in.coursera.org/courses?query=embedded%20systems"> APPLY NOW </a> </button>
+      
+    </div>
+    <div class="job">
+        <h2>DRONE</h2>
+<img src="https://www.cnet.com/a/img/resize/711737497d569a9643976397cc11cbac6245b69b/hub/2021/12/08/ca7efa0d-823b-4394-b99f-3d5eef434de0/dji-mini-2-01.jpg?auto=webp&fit=crop&height=1200&width=1200" alt=""><button><a href="https://droneacademy.telangana.gov.in/enroll/"> APPLY NOW </a> </button>
+      
+    </div>
+    <div class="job">
+        <h2>ARDUINO</h2>
+<img src="https://5.imimg.com/data5/VS/XC/MY-4167793/arduino-nano-500x500.jpg" alt=""><button><a href="https://www.udemy.com/course/arduino-for-beginners-complete-course/?--&utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_118445032537_._ad_618853564450_._kw__._de_m_._dm__._pl__._ti_dsa-1212271230479_._li_9062121_._pd__._&matchtype=&gclid=CjwKCAjwoIqhBhAGEiwArXT7K_EgRCp0anVElUvuSUH0axPjpYb8Hu_bbvoCz2kbXV3U6if1wCII5xoCj5AQAvD_BwE"> APPLY NOW </a> </button>
+      
+    </div>
+
+    <div class="job1">
+        <h2>RASPBERRY PIE</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Raspberry_Pi_4_Model_B_-_Side.jpg" alt="">     <button><a href="https://www.coursera.org/courses?query=raspberry%20pi&utm_source=gg&utm_medium=sem&utm_campaign=B2C_INDIA__branded_FTCOF_courseraplus_arte_PMax&utm_content=Degree&campaignid=19607944793&adgroupid=&device=m&keyword=&matchtype=&network=x&devicemodel=&adpostion=&creativeid=&hide_mobile_promo&gclid=CjwKCAjwoIqhBhAGEiwArXT7K5ePlgbPEmOdKqOISd2JO67QA15RLRcF2_w1CSdI6sVPJ7_JspkDGxoC73cQAvD_BwE"> APPLY NOW </a> </button>
+    </div>
+
+    
+   
+
+    

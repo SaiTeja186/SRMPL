@@ -1,0 +1,47 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const dialogflow = require('dialogflow');
+const { struct } = require('pb-util');
+
+const app = express();
+
+// Set up middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// Define the webhook endpoint
+app.post('/webhook', async (req, res) => {
+  // Get the message text and user ID from the request
+  const message = req.body.message.text;
+  const userId = req.body.sender.id;
+
+  // Set up the Dialogflow request
+  const sessionClient = new dialogflow.SessionsClient();
+  const sessionPath = sessionClient.sessionPath(process.env.PROJECT_ID, userId);
+  const request = {
+    session: sessionPath,
+    queryInput: {
+      text: {
+        text: message,
+        languageCode: 'en-US',
+      },
+    },
+  };
+
+  // Send the request to Dialogflow
+  const responses = await sessionClient.detectIntent(request);
+
+  // Get the response text and send it back to the user
+  const result = responses[0].queryResult;
+  const responseText = result.fulfillmentText;
+  const payload = result.webhookPayload ? result.webhookPayload : '';
+  res.send({
+    fulfillmentText: responseText,
+    payload: payload,
+  });
+});
+
+// Start the server
+app.listen(3000, () => {
+  console.log('Server is listening on port 3000');
+});

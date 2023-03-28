@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>software </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <title>Dark Mode</title>
+        
+        <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+        
+        <style>
+            body{
+            text-align:center;
+            }
+            img{
+                height:40px;
+                    width:40px;
+            }
+            h1{
+            color: #fdfdfd;
+            }
+           
+
+            .mode {
+               float:inline-end;
+            }
+            .change {
+                cursor:grab;
+                border: 1px solid rgb(101, 101, 109);
+                border-radius: 40%;
+                width: 20px;
+                text-align: center;
+                padding: 2px;
+                margin-left: 5px;
+            }
+            .dark{
+				background-image: linear-gradient(135deg, #000000 10%, #000000 100%);
+                color: #cc1919;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="mode">
+            Dark mode:			
+            <span class="change">OFF</span>
+        </div>
+        
+    
+        <script>
+            $( ".change" ).on("click", function() {
+                if( $( "body" ).hasClass( "dark" )) {
+                    $( "body" ).removeClass( "dark" );
+                    $( ".change" ).text( "OFF" );
+                } else {
+                    $( "body" ).addClass( "dark" );
+                    $( ".change" ).text( "ON" );
+                }
+            });
+        </script>
+    </body>
+    
+    
+    </html>
+
+	<style>
+		body {
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+			background-image: linear-gradient(135deg, #050b04 10%, #c5c5c7 100%);
+		}
+		header {
+		
+			background-image: linear-gradient(135deg, #32229f 10%, #c364b0 100%);
+			padding: 10px;
+			text-align: center;
+		}
+		nav {
+            font-family: 'Times New Roman', Times, serif;
+			background-image: linear-gradient(135deg, #000000 10%, #201111 100%);
+			color:rgb(187, 22, 22);
+			padding: 10px;
+			text-align: center;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav a {
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+			padding: 10px;
+		}
+		nav a:hover {
+			background-color: rgb(230, 221, 221);
+		}
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: flex-start;
+			margin: 50px;
+		}
+		.job,.job1,.job2 {
+        
+            background-image: linear-gradient(135deg, #737e95 10%, #ac9200 100%);
+
+			box-shadow: 0px 0px 15px #ccc;
+            border-radius: 10px;
+			margin: 20px;
+			width: 300px;
+			height: 450px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px;
+            
+		}
+
+        .job:hover {
+			transform: translateY(-5px);
+			box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);
+		}
+        .job1:hover:hover {
+			transform: translateY(-5px);
+			box-shadow: 8px 16px 0 rgba(0,0,0,0.2);
+		}
+        .job2:hover:hover {
+			transform: translateY(-5px);
+			box-shadow: 8px 16px 0 rgba(0,0,0,0.2);
+		}
+		.job h2 {
+			margin-top: 0px;
+		}
+        img{
+        width: 700px;
+        height: 700px;
+        object-fit :fill
+      }
+		.job p {
+			margin: 10px 0px;
+		}
+		.job button {
+			background-color: #a2c15e;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			width: 100%;
+			cursor: pointer;
+		}
+        .job1 button {
+			background-color: #a2c15e;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			width: 100%;
+			cursor: pointer;
+		}
+        .job2 button {
+			background-color: #af4c66;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			width: 100%;
+			cursor: pointer;
+		}
+        .job2 img{
+            height: 220px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        .job img{
+            height: 220px;
+            width: 300px;
+        }
+        .job1 img{
+            height: 220px;
+            width: 300px;
+        }
+		.job button:hover {
+			background-color: #3e8e41;
+		}
+        .job1 button:hover {
+			background-color: #3e8e41;
+		}
+        .job2 button:hover {
+			background-color: #3e8e41;
+		}
+		footer {
+			background-color: rgb(21, 14, 14);
+			color: white;
+			padding: 10px;
+			text-align: center;
+        }
+	</style>
+</head>
+<body>
+    <div class="po">
+	<header>
+		<h1>Software Courses</h1>
+	</header>
+    <img src="https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+<img src="https://images.pexels.com/photos/5474028/pexels-photo-5474028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""><main>
+    <div class="job">
+        <h2>FULL STACK WEB DEVELOPMENT</h2>
+<img src="https://images.yourstory.com/cs/1/6b460cd040d711e994bbefffe3577d8b/full-stack-web-development-1586433444650.png" alt=""><button><a href="https://www.w3schools.com/whatis/whatis_fullstack.asp"> APPLY NOW </a> </button>
+      
+    </div>
+
+    <div class="job">
+        <h2>PYTHON</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/800px-Python.svg.png" alt=""><button><a href="https://www.python.org/"> APPLY NOW </a> </button>
+      
+    </div>
+    <div class="job">
+        <h2>JAVA</h2>
+<img src="https://images.idgesg.net/images/article/2019/05/java_binary_code_gears_programming_coding_development_by_bluebay2014_gettyimages-1040871468_2400x1600-100795798-large.jpg?auto=webp&quality=85,70" alt=""><button><a href="https://www.java.com/en/"> APPLY NOW </a> </button>
+      
+    </div>
+    <div class="job">
+        <h2>ORACLE</h2>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0TWrS8MEzTUlAhuSInntKjm_uBxiQwEgOSgOKS1OWcs3QwPET46DDNMwD-zHvJoyztPvLDfKzbdQ&usqp=CAU&ec=48665701" alt=""><button><a href="https://www.oracle.com/in/"> APPLY NOW </a> </button>
+      
+    </div>
+    <div class="job">
+        <h2>MACHINE LEARNING</h2>
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*cG6U1qstYDijh9bPL42e-Q.jpeg" alt=""><button><a href="https://www.ibm.com/in-en/topics/machine-learning"> APPLY NOW </a> </button>
+      
+    </div>
+
+    <div class="job1">
+        <h2>C SHARP</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="">     <button><a href="https://www.w3schools.com/cs/index.php"> APPLY NOW </a> </button>
+    </div>
+
+    
+   
+
+    
